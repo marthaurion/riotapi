@@ -1,0 +1,7 @@
+bin/*
+.classpath
+.project
+*/config.properties
+*/output.txt
+/bin
+dbtest.jar
