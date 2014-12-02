@@ -363,6 +363,7 @@ public class RiotAPI {
 			}
 			
 			data = readUrl(baseURL + "/api/lol/" + region + "/v2.2/match/" + match_id + apiKey);
+			if(data == null) continue;
 			match_data = new JSONObject(data);
 			
 			processMatchData(match_data, team_id, j2.getInt("championId"), winner, my_values, st_sum); // skip a match if it already exists
